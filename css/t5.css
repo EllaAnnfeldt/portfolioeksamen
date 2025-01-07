@@ -1,0 +1,116 @@
+/* Generelle stilarter */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8c99b; /* Lys beige baggrund */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobil: Enkelt kolonne */
+  width: 100%; /* Fylder hele bredden */
+  max-width: 1200px; /* Begrænsning for store skærme */
+  margin-bottom: 40px; /* Afstand mellem sektionerne */
+  margin-top: 50px;
+}
+
+/* Venstre sektion */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: #a58d23; /* Guldfarve */
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column; /* Placer elementer under hinanden */
+  gap: 10px; /* Afstand mellem h2 og p */
+}
+
+/* Højre sektion */
+.right-section {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.my-video {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+}
+
+.right-section-1 {
+  background-image: url("../img/passionssite.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.right-section-2 {
+  background-image: url("../img/virksomhedssite.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  margin-top: 45px;
+}
+
+/* Knap styling */
+.knap {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #a58d23;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.knap:hover {
+  background-color: #eb6126;
+  transform: scale(1.05);
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr; /* To kolonner for desktop */
+    gap: 40px; /* Mere afstand mellem kolonner */
+  }
+
+  .right-section {
+    height: 100%; /* Brug hele højden af grid-cellen */
+  }
+
+  .my-video {
+    margin-top: 50px;
+  }
+}

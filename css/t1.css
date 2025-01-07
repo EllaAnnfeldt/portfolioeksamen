@@ -1,0 +1,83 @@
+/* Generelle stilarter */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d8c99b; /* Lys beige baggrund */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobil: Enkelt kolonne */
+  width: 100%; /* Fylder hele bredden */
+  max-width: 1200px; /* Begrænsning for store skærme */
+  margin-bottom: 40px; /* Afstand mellem sektionerne */
+  margin-top: 50px;
+  gap: 20px;
+}
+
+/* Venstre sektion */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: #a58d23; /* Guldfarve */
+  width: 100%; /* Bevar bredden på boksen */
+  border-radius: 10px;
+  padding: 30px; /* Giver luft inde i boksen */
+  display: flex;
+  flex-direction: column; /* Placer elementer under hinanden */
+  justify-content: flex-start; /* Juster indhold til toppen */
+  align-items: flex-start; /* Juster indhold til venstre */
+  gap: 20px; /* Tilføj afstand mellem h2 og p */
+  height: auto; /* Lad højden følge indholdet */
+  min-height: 0; /* Forhindre arvede begrænsninger */
+  overflow: visible; /* Sikrer, at alt indhold vises */
+}
+
+/* Højre sektion */
+.right-section {
+  background-image: url("../img/kort.webp"); /* Erstat med din billedsti */
+  background-size: contain; /* Sørger for, at hele billedet vises uden beskæring */
+  background-position: center; /* Centrer billedet inden for sektionen */
+  background-repeat: no-repeat; /* Undgå gentagelse af billedet */
+  border-radius: 10px;
+  width: 100%;
+  height: auto; /* Lad sektionen tilpasse sig billedets højde */
+  min-height: 300px; /* Sæt en minimumshøjde som fallback */
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-rows: 1fr; /* En række til desktop */
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+    gap: 40px; /* Mere afstand mellem sektionerne */
+  }
+
+  .left-section h1 {
+    font-size: 2rem; /* Større overskrift */
+  }
+
+  .box {
+    /* Fjern den faste højde */
+    height: auto; /* Lad højden følge indholdet */
+  }
+
+  .right-section {
+    height: 100%; /* Brug hele højden af grid-cellen */
+  }
+}

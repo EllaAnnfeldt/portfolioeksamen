@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f0d5;
+  margin-top: 50px;
+}
+.logo {
+  position: absolute;
+  top: 20px; /* Afstand fra toppen */
+  left: 20px; /* Afstand fra venstre */
+  z-index: 10; /* Sørger for, at logoet er øverst */
+  display: inline-block; /* Sørger for, at linket følger billedets størrelse */
+}
+
+.logo img {
+  width: 50px; /* Justér størrelsen på logoet */
+  height: auto; /* Bevar billedets proportioner */
+  transition: transform 0.2s ease, opacity 0.3s ease; /* Tilføj hover-effekter */
+}
+
+.logo:hover img {
+  transform: scale(1.1); /* Forstør logoet lidt ved hover */
+  opacity: 0.8; /* Gør det lidt gennemsigtigt ved hover */
+}
+
+h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 36px;
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  font-family: "Alfa Slab One", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: black;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  margin: 5%;
+  justify-content: center;
+}
+
+footer p {
+  color: #4e4035;
+}
+
+.wrapper img {
+  height: 30px;
+  width: 30px;
+  margin-right: 3px;
+  float: center;
+  display: inline;
+  list-style: none;
+  flex-direction: row;
+}
