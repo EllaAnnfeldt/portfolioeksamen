@@ -9,7 +9,7 @@
 
 .image-section {
   flex: 1;
-  background-color: #e0895e;
+  background-color: #f96f21;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,20 +41,6 @@
   background-color: #f5f0d5;
   padding: 40px;
   position: relative;
-}
-
-.header-box {
-  background-color: #e0895e;
-  padding: 10px;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.header-box h2 {
-  font-size: 2.5rem;
-  font-family: "Alfa Slab One", sans-serif;
-  color: #844424;
-  margin: 0;
 }
 
 .text-section p {
