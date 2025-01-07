@@ -92,11 +92,6 @@ body {
     font-size: 2rem; /* Større overskrift */
   }
 
-  .box {
-    /* Fjern den faste højde */
-    height: auto; /* Lad højden følge indholdet */
-  }
-
   .right-section {
     height: 100%; /* Brug hele højden af grid-cellen */
   }

@@ -1,4 +1,3 @@
-/* Container */
 .container {
   display: flex;
   flex-direction: row;
@@ -9,7 +8,6 @@
   position: relative; /* Gør det muligt at placere burgeren relativt til containeren */
 }
 
-/* Image Section */
 .image-section {
   flex: 1;
   background-color: #f96f21;
@@ -28,7 +26,6 @@
   border-radius: 10px;
 }
 
-/* Text Section */
 .text-section {
   flex: 2;
   padding: 40px;
@@ -52,7 +49,6 @@
   background-color: #af9410;
 }
 
-/* Responsivt design til burgermenu */
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column; /* Stak indholdet vertikalt på små skærme */

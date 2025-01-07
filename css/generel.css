@@ -1,4 +1,4 @@
-/* Nulstilling af standard margener og paddings */
+/* Nulstilling*/
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +64,6 @@ footer {
   margin-right: 3px;
 }
 
-/* Navigation */
 nav {
   display: flex;
   align-items: center;
