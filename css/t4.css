@@ -21,7 +21,6 @@ body {
   width: 100%; /* Fylder hele bredden */
   max-width: 1200px; /* Begrænsning for store skærme */
   margin-bottom: 40px; /* Afstand mellem sektionerne */
-  margin-top: 50px;
   gap: 20px;
 }
 

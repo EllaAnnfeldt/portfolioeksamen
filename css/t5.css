@@ -18,13 +18,10 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr; /* Mobil: Enkelt kolonne */
-  width: 100%; /* Fylder hele bredden */
-  max-width: 1200px; /* Begrænsning for store skærme */
+  width: 100%;
   margin-bottom: 40px; /* Afstand mellem sektionerne */
-  margin-top: 50px;
 }
 
-/* Venstre sektion */
 .left-section {
   display: flex;
   flex-direction: column;
@@ -42,7 +39,6 @@ body {
   gap: 10px; /* Afstand mellem h2 og p */
 }
 
-/* Højre sektion */
 .right-section {
   background-size: cover;
   background-position: center;

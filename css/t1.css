@@ -21,7 +21,6 @@ body {
   width: 100%; /* Fylder hele bredden */
   max-width: 1200px; /* Begrænsning for store skærme */
   margin-bottom: 40px; /* Afstand mellem sektionerne */
-  margin-top: 50px;
   gap: 20px;
 }
 
@@ -35,16 +34,15 @@ body {
 
 .box {
   background-color: #af9410;
-  width: 100%; /* Bevar bredden på boksen */
+  width: 100%;
   border-radius: 10px;
-  padding: 30px; /* Giver luft inde i boksen */
+  padding: 30px;
   display: flex;
   flex-direction: column; /* Placer elementer under hinanden */
   justify-content: flex-start; /* Juster indhold til toppen */
   align-items: flex-start; /* Juster indhold til venstre */
   gap: 20px; /* Tilføj afstand mellem h2 og p */
   height: auto; /* Lad højden følge indholdet */
-  min-height: 0; /* Forhindre arvede begrænsninger */
   overflow: visible; /* Sikrer, at alt indhold vises */
 }
 
